@@ -3,18 +3,25 @@
     font-family: 'Open Sans';
 }
 
+body {
+    display: grid;
+}
 header {
+    display: flex;
+    align-items: center;
+}
+
+.header-section {
+    text-align: right;
     background-image: url(images/banner/banner2.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 800px;
-    display: flex;
-    align-items: center;
-    padding: 0 300px 0 1000px;}
-
-.header-section {
-    text-align: right;
-
+    display: grid;
+    padding: 0 300px 0 1000px;
+    justify-content: end;
+    align-content: center;
+    justify-items: end;
 }
 
 .btn-primary {
@@ -61,5 +68,58 @@ padding-right: 50px;
 }
 .main-section-details li i {color: #16D887;}
 .main-section-details li {
+    list-style: none;
+}
+
+.my-plan-section {
+    display: flex;
+    gap: 150px;
+    text-align: center;
+    margin: 100px 0;
+    justify-content: center;
+}
+.gradient-images {
+    display: grid;
+    background-image: linear-gradient(to right, rgba(241, 91, 34, 1), rgba(241, 91, 34, 0)),
+    url(images/watch.png);
+    width: 1140px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 100px 0;
+    align-content: center;
+    justify-content: start;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+}
+.gradient-section {
+    
+    display: flex;
+    justify-content: center;
+}
+.gradient-section h3 {
+    padding: 0 500px 0 50px;
+}
+
+.gradient-section button {
+    color: #F15B22;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer-section {
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    background: #000;
+    display: flex;
+    color: #fff;
+    width: 1500px;
+    align-items: center;
+    justify-content: center;
+}
+.footer li {
+    display: inline-block;
     list-style: none;
 }
